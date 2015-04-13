@@ -1,0 +1,73 @@
+.checkbox{
+    font-size: 13px;
+    line-height: 24px;
+    display: block;
+    position: relative;
+    margin: 0 5%;
+
+    label{
+        cursor: pointer;
+        margin: 0;
+        min-height: 16px;
+        padding-left: 24px;
+        color: @check-label-color; 
+
+        a {
+            color: @blue;
+            text-decoration: none;
+        }
+    }
+    input[checkbox]{
+        line-height: normal;
+        margin: 4px 0 0;
+        padding: 0;
+        position: absolute;
+        margin-left: -24px;
+    }
+
+    .circle {
+        border: 2px solid @check-label-color;
+        -webkit-transition: border-color .3s cubic-bezier(.4,0,.2,1);
+        transition: border-color .3s cubic-bezier(.4,0,.2,1);
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 16px;
+    }
+
+    .circle-icon{
+        background-color: transparent;
+        -webkit-transition: all .3s cubic-bezier(.4,0,.2,1);
+        transition: all .3s cubic-bezier(.4,0,.2,1);     
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 16px;
+    }
+
+    .access-hide{
+        padding: 0;
+        margin: 1px;
+        border: 0;
+        position: absolute;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+
+        &:checked ~ .circle-icon {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            background-image: url('@@static/img/checked.svg');
+            background-size: 24px;
+            background-position: center;
+        }
+
+        &:checked ~ .circle {
+            border: none;
+        }
+    }
+}
