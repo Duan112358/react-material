@@ -6,7 +6,12 @@ react demo
     npm install
 
 ### develop mode
-    npm run start
+    gulp
   
 ### release mode
-    npm run build
+    gulp release
+
+    with permerant hash cache enabled
+
+###
+    code fork from [elemental](https://elementalui.github.io/elemental)
