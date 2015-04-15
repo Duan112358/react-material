@@ -11,7 +11,9 @@ react demo
 ### release mode
     gulp release
 
-    with permerant hash cache enabled
+###update
+* develop mode with auto refresh enabled
+* build mode with permerant hash cache enabled
 
-###
-    code fork from [elemental](https://elementalui.github.io/elemental)
+code fork from [material](https://github.com/Daemonite/material.git)
+rewrite with React.js , still under developing ...
