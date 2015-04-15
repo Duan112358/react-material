@@ -27,6 +27,10 @@ module.exports = {
     return classSet(this.getClassSet(classString));
   },
 
+  getClassString: function(classObj){
+    return classSet(classObj);
+  },
+
   getClassSet: function(classString) {
     var classObj = {};
 

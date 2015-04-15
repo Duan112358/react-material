@@ -39,7 +39,14 @@ module.exports = {
         new webpack.ProvidePlugin({
             jQuery: 'jquery',
             $: 'jquery'
-        })
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                "NODE_ENV": JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin()
     ],
     resolve: {
         extensions: ['', '.js', '.jsx', '.less', '.css']
