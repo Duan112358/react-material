@@ -1,5 +1,5 @@
 {
-  "name": "react material demo",
+  "name": "react-material-demo",
   "version": "0.0.1",
   "description": "google material design implemented using React.js",
   "main": "app.js",
